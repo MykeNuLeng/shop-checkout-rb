@@ -15,4 +15,8 @@ describe Shop do
   it 'can correctly output a number if inputs are correct' do
     expect(subject.checkout('AA')).to eq 100
   end
+
+  it 'can correctly output a number from a range of items' do
+    expect(subject.checkout('ABCD')).to eq 115
+  end
 end

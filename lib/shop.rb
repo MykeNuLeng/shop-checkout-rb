@@ -15,7 +15,7 @@ class Shop
     items.split("").each { |item|
       return -1 unless @prices.has_key?(item)
 
-      @total += @prices['A']
+      @total += @prices[item]
     }
 
     @total
