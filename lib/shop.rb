@@ -29,11 +29,10 @@ class Shop
   end
 
   def checkout(items)
-    return -1 unless items.is_a? String
+    return -1 unless items.is_a? String 
 
-    items_arr = items.split("")
-    return -1 if calc_total(items_arr) == -1
-    
+    return -1 if calc_total(items.split("")) == -1
+
     savings
     @total
   end
