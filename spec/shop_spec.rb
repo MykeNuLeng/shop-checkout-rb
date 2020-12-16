@@ -19,4 +19,12 @@ describe Shop do
   it 'can correctly output a number from a range of items' do
     expect(subject.checkout('ABCD')).to eq 115
   end
+
+  it 'can correctly account for deals' do
+    expect(subject.checkout('AAA')).to eq 130
+  end
+
+  it 'can correctly account for deals' do
+    expect(subject.checkout('AAAAAA')).to eq 260
+  end
 end
